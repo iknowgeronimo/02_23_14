@@ -1,0 +1,294 @@
+.weather{
+  width: 100%;
+}
+
+.weather .currentweather{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  height:250px;
+
+}
+
+.weather .currentweather .loading{
+  position : relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+
+  background-image: url(../img/loading.png);
+  width:37px;
+  height:37px;
+  -webkit-animation: rotation .8s infinite linear;
+  -moz-animation: rotation .8s infinite linear;
+  -o-animation: rotation .8s infinite linear;
+  animation: rotation .8s infinite linear;
+}
+
+.weather .currentweather .city{
+  position : relative;
+  color: #000;
+  font-size: 20px;
+}
+
+.weather .currentweather .date{
+  position : relative;
+  color: #666;
+  margin-top: 5px;
+}
+
+.weather .currentweather .time{
+  position : relative;
+  margin-top: 5px;
+}
+
+.weather .currentweather .dailyweather{
+  position : relative;
+  margin-top: 40px
+}
+
+.weather .currentweather .dailyweather .icon{
+  position : relative;
+}
+
+.weather .currentweather .dailyweather .icon img{
+  /*width: 100px;*/
+}
+
+.weather .currentweather .dailyweather .temp{
+  position : relative;
+  font-size: 80px;
+  font-family: Roboto-Thin;
+}
+
+.weather .currentweather .dailyweather .temp .unit{
+  display: inline;
+  font-size: 18px;
+  font-family: Roboto-Regular;
+}
+
+.weather .currentweather .details{
+  position : absolute;
+  bottom:145px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  /*margin-bottom: 20px;*/
+  font-size: 18px;
+
+}
+
+.weather .currentweather .details .temp-icon{
+  width: 14px;
+  height: 28px;
+  background-image: url(../img/weather/temp-icon.png);
+  float: left;
+  margin-top: 8px;
+}
+
+.weather .currentweather .details .wind-icon{
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/weather/wind-icon.png);
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.weather .currentweather .details .humid-icon{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/weather/humid-icon.png);
+  float: left;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+.weather .currentweather .details .temps{
+  position : relative;
+  float: left;
+  margin-left: 10px;
+  /*width: 33%;*/
+
+}
+
+.weather .currentweather .details .temps .high{
+  
+}
+
+.weather .currentweather .details .temps .low{
+  color: #000;
+}
+
+
+.weather .currentweather .details .wind{
+  position : relative;
+  float: left;
+  /*width: 33%;*/
+  color: #000;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 50px;
+}
+
+.weather .currentweather .details .wind .speed{
+  float: left;
+}
+
+.weather .currentweather .details .wind .unit{
+  font-size: 11px;
+  float: left;
+  margin-top: 2px;
+}
+
+.weather .currentweather .details .humidity{
+  position : relative;
+  /*float: left;*/
+  /*width: 33%;*/
+  color: #000;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#hourly-wrapper{
+  z-index:1;
+  overflow:hidden;
+}
+
+.weather .hourlyweather{
+  display: none;
+  margin-top: 30px;
+  
+}
+
+.weather .hourlyweather .hour{
+  position: relative;
+  float:left;
+  width:130px;
+  /*height:100px;*/
+  margin-right: 10px;
+  /*background-color: #222;*/
+  
+}
+
+.weather .hourlyweather .htime{
+  font-size: 14px;
+  margin-bottom: 15px
+}
+
+.weather .hourlyweather .weather-icon img{
+  width: 90px;
+}
+
+.weather .hourlyweather .temp{
+  font-size: 60px;
+  font-family: Roboto-Thin;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+  
+.weather .hourlyweather .temp .unit{
+  display: inline;
+  font-size: 16px;
+  font-family: Roboto-Regular;
+}
+
+
+.weather .toggle-icon{
+  position: relative;
+  width: 27px;
+  height: 16px;
+  left:50%;
+  margin-left: -13px;
+  margin-top: 75px;
+  background-image: url(../img/refresh.png);
+  cursor: pointer;
+
+}
+
+
+.weather .weeklyforecast{
+  z-index: 2;
+  position : absolute;
+  bottom: 20;
+  height: 80px;
+  width: 350px;
+  margin-left: -175px;
+  left: 50%;
+  
+}
+
+.weather .bg-footer{
+  z-index: 1;
+  background-color: rgba(255,255,255,0.7);
+  position : absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+
+  -webkit-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.weather .weeklyforecast .day{
+  width: 33%;
+  position: relative;
+  float: left;
+  /*margin-top: 20px;*/
+  
+}
+
+.weather .weeklyforecast .date{
+  position: relative;
+  text-align: center;
+  font-family: Roboto-Black;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 5px;
+  
+}
+
+.weather .weeklyforecast .weather-icon{
+  position: relative;
+  float:left;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.weather .weeklyforecast .weather-icon img{
+  width: 33px;
+}
+
+.weather .weeklyforecast .temp{
+  position: relative;
+  float:left;
+  font-size: 14px;
+  
+}
+
+.weather .weeklyforecast .temp .high{
+  
+}
+
+.weather .weeklyforecast .temp .low{
+  color: #000;
+  opacity: .5;
+  
+}
+
+.weather .weeklyforecast .city{
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  color: #000;
+  opacity: .5;
+  margin-top: 5px;
+  
+}
+

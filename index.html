@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <title>River Cruise Demo App</title>
@@ -322,44 +321,161 @@
       </div>
     </script>
     
-    <script src="phonegap.js"></script>
+    <script src="./phonegap.js"></script>
     
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1waQCfoRmTbhOL9IzpbQtbt4g3JX3FxM&amp;v=3.exp&amp;sensor=true&amp;language=en"></script>
+    <script type="text/javascript" src="./js"></script><script src="./main.js" type="text/javascript"></script>
     
-    <script src="js/lib/jquery-1.10.1.min.js"></script>
+    <script src="./js/lib/jquery-1.10.1.min.js"></script>
     
-    <script src="js/lib/underscore-min.js"></script>
-    <script src="js/lib/backbone-min.js"></script>
-    <script src="js/lib/PushNotification.js"></script>
-    <script src="js/lib/iscroll.js"></script>
-    <script src="js/lib/createjs-2013.09.25.min.js"></script>
-    <script src="js/lib/soundjs-0.5.0.min.js"></script>
-    <script src="js/lib/flashplugin-0.5.0.min.js"></script>
-    <script src="js/lib/richmarker-compiled.js"></script>
+    <script src="./js/lib/underscore-min.js"></script>
+    <script src=".js/lib/backbone-min.js"></script>
+    <script src="./js/lib/PushNotification.js"></script>
+    <script src="./js/lib/iscroll.js"></script>
+    <script src="./js/lib/createjs-2013.09.25.min.js"></script>
+    <script src="./js/lib/soundjs-0.5.0.min.js"></script>
+    <script src="./js/lib/flashplugin-0.5.0.min.js"></script>
+    <script src="./js/lib/richmarker-compiled.js"></script>
     
-    <script type="text/javascript" src="js/view/BackgroundView.js"></script>
-    <script type="text/javascript" src="js/view/PreloaderView.js"></script>
-    <script type="text/javascript" src="js/view/DirectionView.js"></script>
-    <script type="text/javascript" src="js/view/HomeView.js"></script>
-    <script type="text/javascript" src="js/view/ToursView.js"></script>
-    <script type="text/javascript" src="js/view/PointsView.js"></script>
-    <script type="text/javascript" src="js/view/WalkingTourView.js"></script>
-    <script type="text/javascript" src="js/view/WeatherView.js"></script>
-    <script type="text/javascript" src="js/Router.js"></script>
-    <script type="text/javascript" src="js/Navigation.js"></script>
-    <script type="text/javascript" src="js/util/DataService.js"></script>
-    <script type="text/javascript" src="js/util/WikipediaService.js"></script>
-    <script type="text/javascript" src="js/util/GoogleMapService.js"></script>
-    <script type="text/javascript" src="js/util/GeoLocationService.js"></script>
-    <script type="text/javascript" src="js/util/WeatherService.js"></script>
-    <script type="text/javascript" src="js/util/AgendaService.js"></script>
-    <script type="text/javascript" src="js/util/Clock.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="./js/view/BackgroundView.js"></script>
+    <script type="text/javascript" src="./js/view/PreloaderView.js"></script>
+    <script type="text/javascript" src="./js/view/DirectionView.js"></script>
+    <script type="text/javascript" src="./js/view/HomeView.js"></script>
+    <script type="text/javascript" src="./js/view/ToursView.js"></script>
+    <script type="text/javascript" src="./js/view/PointsView.js"></script>
+    <script type="text/javascript" src="./js/view/WalkingTourView.js"></script>
+    <script type="text/javascript" src="./js/view/WeatherView.js"></script>
+    <script type="text/javascript" src="./js/Router.js"></script>
+    <script type="text/javascript" src="./js/Navigation.js"></script>
+    <script type="text/javascript" src="./js/util/DataService.js"></script>
+    <script type="text/javascript" src="./js/util/WikipediaService.js"></script>
+    <script type="text/javascript" src="./js/util/GoogleMapService.js"></script>
+    <script type="text/javascript" src="./js/util/GeoLocationService.js"></script>
+    <script type="text/javascript" src="./js/util/WeatherService.js"></script>
+    <script type="text/javascript" src="./js/util/AgendaService.js"></script>
+    <script type="text/javascript" src="./js/util/Clock.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
-    <section id="bg"></section>
-    <section id="content"></section>
-    <div id="debug" style="position: absolute;
-z-index: 100;pointer-events:none;"></div>
+    <section id="bg"><div>
+      <div class="general-bg" style="width: 1920px; height: 942px;"><img class="background-image" src="./img/background/background-home.jpg" style="width: 1920px; height: 3419.325842696629px; top: 0px;"></div>
+    </div></section>
+    <section id="content"><div>
 
-  </body>
-</html>
+      <div class="agenda-notification">
+        <div class="agenda-notification-container">
+          <div class="agenda-notification-icon"></div>
+          <div class="agenda-notification-title"></div>
+          <div class="agenda-notification-description"></div>
+          <div class="agenda-notification-footer">
+            <div class="agenda-notification-button-close"><span>Close</span></div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="header">
+        <div class="logo"></div>
+        <div class="geolocation"></div>
+        <div class="currentweather"><div class="unit">F</div> <div class="temperature">35.4°</div><img src="./River Cruise Demo App_files/01.png"><div class="city">Budapest, Hungary</div><div class="date">Sunday, Jan 23</div></div>
+        <div class="currenttime"><span class="time">09:23</span><span class="info">PM </span><span class="info">(UTC -0800)</span></div>
+      </div>
+
+      <div class="agenda-widget">
+        <div class="icon"></div>
+        <div class="event">Day is over, see you tomorrow !</div>
+        <div class="arrow arrow-down"></div>
+        
+      </div>
+
+      <div class="agenda-slide" style="display: none;">
+        <div class="tabs">
+          <div class="tab daily" style="border-bottom-color: rgb(191, 0, 44); border-bottom-style: solid; border-bottom-width: 4px;"><p>Daily</p></div>
+          <div class="tab trip"><p>Trip</p></div>
+        </div>
+
+        <div id="agendascrollwrapper" style="overflow: hidden;">
+          <div class="agendas" style="-webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px);">
+            <div class="dailyagenda"><div class="hour"><div class="number"><p>6:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>7:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>8:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>9:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>10:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>11:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>12:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>13:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>14:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>15:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>16:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>17:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>18:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>19:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>20:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>21:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>22:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="container"><div class="agendabox" id="event_1" style="position: absolute; top: 19px; left: 70px; width: 915px; height: 296px; background-color: rgba(255, 255, 255, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Cafe Breakfast</div></div><div class="agendabox" id="event_2" style="position: absolute; top: 169px; left: 985px; width: 915px; height: 236px; background-color: rgba(220, 220, 220, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Shore Excursion: Budapest</div></div><div class="agendabox" id="event_3" style="position: absolute; top: 409px; left: 70px; width: 1830px; height: 56px; background-color: rgba(214, 16, 40, 0.901961);"><div class="description" style="color: rgb(255, 255, 255);">Lunch</div></div><div class="agendabox" id="event_4" style="position: absolute; top: 499px; left: 70px; width: 1830px; height: 146px; background-color: rgba(220, 220, 220, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Guided Walking Tour: Budapest Walk</div></div><div class="agendabox" id="event_5" style="position: absolute; top: 709px; left: 70px; width: 915px; height: 116px; background-color: rgba(255, 255, 255, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Cocktail Hour</div></div><div class="agendabox" id="event_6" style="position: absolute; top: 769px; left: 985px; width: 915px; height: 56px; background-color: rgba(220, 220, 220, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Daily Briefly</div></div><div class="agendabox" id="event_7" style="position: absolute; top: 859px; left: 70px; width: 1830px; height: 56px; background-color: rgba(214, 16, 40, 0.901961);"><div class="description" style="color: rgb(255, 255, 255);">Welcome dinner</div></div><div class="agendabox" id="event_8" style="position: absolute; top: 919px; left: 70px; width: 1830px; height: 56px; background-color: rgba(214, 16, 40, 0.901961);"><div class="description" style="color: rgb(255, 255, 255);">Cast off</div></div></div></div>
+            <div class="tripagenda" style="display: none;"><div class="day" id="day_0"><div class="date"><div class="month">08/14</div><div class="dayletters">TUE</div></div><div class="weather-icon"><img src="./River Cruise Demo App_files/01.png"></div><div class="city" style="width: 1780px;"><div class="name">Budapest</div><div class="desc">Discover Budapest historic city center through guided walking tours ...</div></div></div><div class="day" id="day_1"><div class="date"><div class="month">08/15</div><div class="dayletters">WED</div></div><div class="weather-icon"><img src="./River Cruise Demo App_files/02.png"></div><div class="city" style="width: 1780px;"><div class="name">Vienna</div><div class="desc">Discover Vienna historic city center through guided walking tours ...</div></div></div><div class="day" id="day_2"><div class="date"><div class="month">08/16</div><div class="dayletters">THU</div></div><div class="weather-icon"><img src="./River Cruise Demo App_files/02.png"></div><div class="city" style="width: 1780px;"><div class="name">Vienna</div><div class="desc">Discover Vienna historic city center through guided walking tours ...</div></div></div><div class="day" id="day_3"><div class="date"><div class="month">08/17</div><div class="dayletters">FRI</div></div><div class="weather-icon"><img src="./River Cruise Demo App_files/04.png"></div><div class="city" style="width: 1780px;"><div class="name">Bratislava</div><div class="desc">Discover Bratislava ...</div></div></div></div>
+          </div>  
+        </div>
+
+      </div>
+
+      <div id="scrollwrapper" style="overflow: hidden;">
+
+      <div class="menu" style="-webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px);">
+
+        <div class="box" id="walks">
+          
+          <div class="menuIcon icon-walks"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Walks
+          </div>
+        </div>
+
+        <div class="box" id="map">
+          <div class="menuIcon icon-map"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Map
+          </div>
+        </div>
+
+        <div class="box" id="directions">
+          <div class="menuIcon icon-directions"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Directions
+          </div>
+        </div>
+
+        <div class="box" id="weather">
+          <div class="menuIcon icon-weather"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Weather
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="menuIcon icon-currency"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Currency
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="menuIcon icon-translate"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Translate
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="menuIcon icon-taxi"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Taxi
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="menuIcon icon-postcard"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Postcard
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="menuIcon icon-emergency"></div>
+          <div class="innerContent" style="line-height: 649.9359999999999px;">
+            Emergency
+          </div>
+        </div>
+
+      </div>
+
+        
+      <div style="position: absolute; z-index: 100; width: 7px; bottom: 2px; top: 2px; right: 1px; pointer-events: none; -webkit-transition: opacity 0ms 300ms; transition: opacity 0ms 300ms; overflow: hidden; opacity: 0;"><div style="position: absolute; z-index: 100; background-color: rgba(0, 0, 0, 0.498039); border: 1px solid rgba(255, 255, 255, 0.901961); -webkit-background-clip: padding-box; box-sizing: border-box; width: 100%; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; pointer-events: none; -webkit-transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transform: translate(0px, 0px) translateZ(0px); height: 221px;"></div></div></div>
+
+    </div></section>
+    
+
+  
+</body></html>
