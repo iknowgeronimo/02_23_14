@@ -1,0 +1,304 @@
+{
+	"cruises":[
+		{
+			"id":"cruise-amsterdam-budapest",
+			"title":"Grand European Tour",
+			"itinerary":[
+				{
+					"day":[1],
+					"country":"Netherlands",
+					"city":"Amsterdam"
+				},
+				{
+					"day":[2,3],
+					"country":"Hungary",
+					"city":"Budapest",
+					"walking-tours-id":[
+						"budapest-old-town"
+					]
+				}
+			]
+		}
+	
+	],
+	"walking_tours":[
+		{
+			"id":"walking-tour-budapest",
+			"city":"Budapest",
+			"country":"Hungary",
+			"ship_latitude":"47.499641",
+			"ship_longitude":"19.046021",
+			"walking_tours_list":
+			[
+				{
+					"id":"budapest-old-town",
+					"title":"Old Town Tour",
+					"cover":"img/walking-tour/budapest-old-town/cover.jpg",
+					"description":"Lorem Ipsum Dolor Sit Amet,consectetur adipiscing elit. Sed eget augue elementum...",
+					"duration":"35 min Â· <font color='#666'>2.5 miles</font>",
+					"checkpoints":[
+						{
+							"id": "budapest_old_town_checkpoint_1",
+							"title": "SzÃ©chenyi Chain Bridge",
+							"lat":"47.499060",
+							"long":"19.044061",
+							"thumbnail": "img/gallery/img3thumb.jpg",
+
+							"images":[
+								{
+									"url":"img/gallery/img3-1.jpg"
+								},
+								{
+									"url":"img/gallery/img3-2.jpg"
+								},
+								{
+									"url":"img/gallery/img3-3.jpg"
+								},
+								{
+									"url":"img/gallery/img3-4.jpg"
+								},
+								{
+									"url":"img/gallery/img3-5.jpg"
+								},
+								{
+									"url":"img/gallery/img3-6.jpg"
+								}
+							],
+
+							"wikipedia": "Chain Bridge (Budapest)",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/chain-bridge.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+
+						},
+						{
+							"id": "budapest_old_town_checkpoint_2",
+							"title": "Shoes on the Danube Promenade",
+							"lat":"47.50139",
+							"long":"19.04550",
+							"thumbnail": "img/gallery/img1thumb.jpg",
+							"images":[
+								{
+									"url":"img/gallery/img1.jpg"
+								}
+							],
+							"wikipedia":"Shoes on the Danube Promenade",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/hungarian-state-opera-house.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						},
+						{
+							"id": "budapest_old_town_checkpoint_3",
+							"title": "Hungarian Parliament",
+							"lat":"47.506944",
+							"long":"19.045556",
+							"thumbnail": "img/gallery/img1thumb.jpg",
+							"images":[
+								{
+									"url":"img/gallery/img1-1.jpg"
+								},
+								{
+									"url":"img/gallery/img1-2.jpg"
+								},
+								{
+									"url":"img/gallery/img1-3.jpg"
+								}
+							],
+							"wikipedia":"Hungarian Parliament Building",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/hungarian-state-opera-house.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						},
+						{
+							"id": "budapest_old_town_checkpoint_4",
+							"title": "Great Market Hall",
+							"lat":"47.486667",
+							"long":"19.058889",
+							"thumbnail": "img/gallery/img4thumb.jpg",
+							"images":[
+								{
+									"url":"img/gallery/img4-1.jpg"
+								},
+								{
+									"url":"img/gallery/img4-2.jpg"
+								},
+								{
+									"url":"img/gallery/img4-3.jpg"
+								},
+								{
+									"url":"img/gallery/img4-4.jpg"
+								},
+								{
+									"url":"img/gallery/img4-5.jpg"
+								},
+								{
+									"url":"img/gallery/img4-6.jpg"
+								},
+								{
+									"url":"img/gallery/img4-7.jpg"
+								}
+							],
+							"wikipedia":"Great Market Hall (Budapest)",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/hungarian-state-opera-house.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						},
+						{
+							"id": "budapest_old_town_checkpoint_5",
+							"title": "Hungarian State Opera House",
+							"lat":"47.5027167",
+							"long":"19.0583167",
+							"thumbnail": "img/gallery/img1thumb.jpg",
+							"images":[
+								{
+									"url":"img/gallery/img1.jpg"
+								}
+							],
+							"wikipedia":"Hungarian State Opera House",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/hungarian-state-opera-house.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						},
+						{
+							"id": "budapest_old_town_checkpoint_6",
+							"title": "St. Stephenâ€™s Basilica",
+							"lat":"47.5008833",
+							"long":"19.0539833",
+							"thumbnail": "img/gallery/img2thumb.jpg",
+
+							"images":[
+								{
+									"url":"img/gallery/img2-1.jpg"
+								},
+								{
+									"url":"img/gallery/img2-2.jpg"
+								},
+								{
+									"url":"img/gallery/img2-3.jpg"
+								},
+								{
+									"url":"img/gallery/img2-4.jpg"
+								},
+								{
+									"url":"img/gallery/img2-5.jpg"
+								},
+								{
+									"url":"img/gallery/img2-6.jpg"
+								}
+							],
+							"wikipedia":"St. Stephen's Basilica",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/stephen-basilica.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						},
+						{
+							"id": "budapest_old_town_checkpoint_7",
+							"title": "CafÃ© Gerbeaud",
+							"lat":"47.497014",
+							"long":"19.050417",
+							"thumbnail": "img/gallery/img1thumb.jpg",
+							"images":[
+								{
+									"url":"img/gallery/img1.jpg"
+								}
+							],
+							"wikipedia":"CafÃ© Gerbeaud",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/hungarian-state-opera-house.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						},
+						{
+							"id": "budapest_old_town_checkpoint_8",
+							"title": "Gresham Palace",
+							"lat":"47.499747",
+							"long":"19.047981",
+							"thumbnail": "img/gallery/img1thumb.jpg",
+							"images":[
+								{
+									"url":"img/gallery/img1.jpg"
+								}
+							],
+							"wikipedia":"Gresham Palace",
+							"media":[
+								{
+									"type":"video",
+									"url":"http://www.youtube.com/v/XNTnjkjQsT0"
+								},
+								{
+									"type":"audio",
+									"url":"/sound/hungarian-state-opera-house.mp3",
+									"thumbnail":"/images/media/budapest-old-town-audio1.jpg"
+								}
+							]
+						}
+						
+						
+					]
+				}
+				
+			]
+
+		}
+
+	]
+
+
+	
+}
+

@@ -1,0 +1,207 @@
+{
+
+	"agenda":[
+		{
+			"id":"1408",
+			"city":"Budapest",
+			"country":"Hungary",
+			"date":"14",
+			"day":"tuesday",
+			"month":"08",
+			"description": "Discover Budapest historic city center through guided walking tours ...",
+			"dailyagenda":
+			{
+				"events":[
+					{
+						"id": "event_1",
+						"description": "Cafe Breakfast",
+						"type": "food",
+						"start":"6",
+						"end":"11"
+					},
+					{
+						"id": "event_2",
+						"description": "Shore Excursion: Budapest",
+						"type": "tours",
+						"start":"8.5",
+						"end":"12.5"
+					},
+					{
+						"id": "event_3",
+						"description": "Lunch",
+						"type": "important",
+						"start":"12.5",
+						"end":"13.5"
+					},
+					{
+						"id": "event_4",
+						"description": "Guided Walking Tour: Budapest Walk",
+						"type": "tours",
+						"start":"14",
+						"end":"16.5"
+					},
+					{
+						"id": "event_5",
+						"description": "Cocktail Hour",
+						"type": "food",
+						"start":"17.5",
+						"end":"19.5"
+					},
+					{
+						"id": "event_6",
+						"description": "Daily Briefly",
+						"type": "tours",
+						"start":"18.5",
+						"end":"19.5"
+					},
+					{
+						"id": "event_7",
+						"description": "Welcome dinner",
+						"type": "important",
+						"start":"20",
+						"end":"21"
+					},
+					{
+						"id": "event_8",
+						"description": "Cast off",
+						"type": "important",
+						"start":"21",
+						"end":"22"
+					}
+				]
+			}
+				
+			
+
+		},
+		{
+			"id":"1508",
+			"city":"Vienna",
+			"country":"Austria",
+			"date":"15",
+			"day":"wednesday",
+			"month":"08",
+			"description": "Discover Vienna historic city center through guided walking tours ...",
+			"dailyagenda":
+			[
+				{
+					"events":[
+						{
+							"id": "event_1",
+							"description": "Breakfast",
+							"start":"8:30",
+							"end":"9:30"
+						},
+						{
+							"id": "event_2",
+							"description": "Guided Tours",
+							"start":"9:30",
+							"end":"12:00"
+						},
+						{
+							"id": "event_3",
+							"description": "Meet at ship",
+							"start":"12:00",
+							"end":"13:00"
+						},
+						{
+							"id": "event_4",
+							"description": "Lunch",
+							"start":"13:00",
+							"end":"14:00"
+						}
+					]
+				}
+				
+			]
+
+		},
+		{
+			"id":"1608",
+			"city":"Vienna",
+			"country":"Austria",
+			"date":"16",
+			"day":"thursday",
+			"month":"08",
+			"description": "Discover Vienna historic city center through guided walking tours ...",
+			"dailyagenda":
+			[
+				{
+					"events":[
+						{
+							"id": "event_1",
+							"description": "Breakfast",
+							"start":"8:30",
+							"end":"9:30"
+						},
+						{
+							"id": "event_2",
+							"description": "Guided Tours",
+							"start":"9:30",
+							"end":"12:00"
+						},
+						{
+							"id": "event_3",
+							"description": "Meet at ship",
+							"start":"12:00",
+							"end":"13:00"
+						},
+						{
+							"id": "event_4",
+							"description": "Lunch",
+							"start":"13:00",
+							"end":"14:00"
+						}
+					]
+				}
+				
+			]
+
+		},
+		{
+			"id":"1708",
+			"city":"Bratislava",
+			"country":"Slovakia",
+			"date":"17",
+			"day":"friday",
+			"month":"08",
+			"description": "Discover Bratislava ...",
+			"dailyagenda":
+			[
+				{
+					"events":[
+						{
+							"id": "event_1",
+							"description": "Breakfast",
+							"start":"8:30",
+							"end":"9:30"
+						},
+						{
+							"id": "event_2",
+							"description": "Guided Tours",
+							"start":"9:30",
+							"end":"12:00"
+						},
+						{
+							"id": "event_3",
+							"description": "Meet at ship",
+							"start":"12:00",
+							"end":"13:00"
+						},
+						{
+							"id": "event_4",
+							"description": "Lunch",
+							"start":"13:00",
+							"end":"14:00"
+						}
+					]
+				}
+				
+			]
+
+		}
+	]
+
+
+	
+}

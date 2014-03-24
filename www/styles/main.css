@@ -1,0 +1,2921 @@
+@charset "CP850";
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\000035}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\0000326}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\0000330}}
+body {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\0000333}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\0000336}}
+blockquote, q {
+  quotes: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\0000339}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/reset\.sass}line{font-family:\0000344}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto-Black.eot");
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto-Black.svg#Roboto-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin.eot");
+  src: url("../fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto-Thin.ttf") format("truetype"), url("../fonts/Roboto-Thin.svg#Roboto-Thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon-Bold";
+  src: url("../fonts/Brandon-Bold.eot");
+  src: url("../fonts/Brandon-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Brandon-Bold.woff") format("woff"), url("../fonts/Brandon-Bold.ttf") format("truetype"), url("../fonts/Brandon-Bold.svg#Brandon-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brandon-Regular";
+  src: url("../fonts/Brandon-Regular.eot");
+  src: url("../fonts/Brandon-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Brandon-Regular.woff") format("woff"), url("../fonts/Brandon-Regular.ttf") format("truetype"), url("../fonts/Brandon-Regular.svg#Brandon-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/home\.sass}line{font-family:\000033}}
+#home {
+  position: relative;
+  /*background: #333333 */
+  width: 100%;
+  height: 100%;
+  /*background: url('/images/ui/bg/home-bg.jpg') center center no-repeat fixed */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 58px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/home\.sass}line{font-family:\0000315}}
+#home:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/home\.sass}line{font-family:\0000327}}
+.preloader-bg {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/home\.sass}line{font-family:\0000333}}
+.preloader-bar {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #b10a32;
+  left: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/home\.sass}line{font-family:\0000341}}
+.preloader-text {
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\000034}}
+#footer {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 58px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+  color: #b2b2b2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000317}}
+.footer-logo {
+  width: 169px;
+  height: 58px;
+  background-image: url("../images/ui/footer-logo.png");
+  cursor: pointer;
+  position: absolute;
+  left: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000325}}
+.footer-breadcrumb {
+  color: #7f7f7f;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  left: 225px;
+  top: 20px;
+  width: 100%;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000336}}
+.footer-breadcrumb a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000340}}
+.footer-breadcrumb a {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000344}}
+.footer-right {
+  height: 58px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000350}}
+.footer-center {
+  height: 38px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  padding-top: 21px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000359}}
+.footer-facebook {
+  width: 32px;
+  height: 58px;
+  background-image: url("../images/ui/footer-facebook.png");
+  cursor: pointer;
+  position: absolute;
+  right: 90px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000366}}
+.footer-facebook:hover {
+  background-image: url("../images/ui/footer-facebook-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000369}}
+.footer-twitter {
+  width: 32px;
+  height: 58px;
+  background-image: url("../images/ui/footer-twitter.png");
+  cursor: pointer;
+  position: absolute;
+  right: 58px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000376}}
+.footer-twitter:hover {
+  background-image: url("../images/ui/footer-twitter-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000379}}
+.footer-volume {
+  width: 32px;
+  height: 58px;
+  background-image: url("../images/ui/footer-volume.png");
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000386}}
+.footer-volume:hover {
+  background-image: url("../images/ui/footer-volume-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000389}}
+.footer-volume-mute {
+  width: 32px;
+  height: 58px;
+  background-image: url("../images/ui/footer-volume-mute.png");
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000396}}
+.footer-volume-mute:hover {
+  background-image: url("../images/ui/footer-volume-mute-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\0000399}}
+.footer-link {
+  position: relative;
+  display: inline;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-left: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\00003105}}
+.footer-link:hover span {
+  color: #b10a32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\00003108}}
+.footer-link:first-child {
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/footer\.sass}line{font-family:\00003111}}
+#link-pick-trip:after, #link-see-cruises:after {
+  content: "•";
+  position: relative;
+  padding-left: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\000039}}
+#cruises-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000317}}
+.cruises-button-search {
+  width: 48px;
+  height: 48px;
+  background: url("../images/ui/cruises-button-search.png") left top no-repeat;
+  background-color: #b10a32;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000326}}
+.cruises-button-search:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000329}}
+.cruise-box-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/ajax-loader-small-red.gif") center center no-repeat;
+  background-color: #b10a32;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000340}}
+#cruises-list:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000347}}
+.cruise-box {
+  position: relative;
+  width: 25%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  float: left;
+  padding: 0 0 0 0;
+  overflow: hidden;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000358}}
+.cruise-box:hover {
+  background: #b10a32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000361}}
+.cruise-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000366}}
+.cruise-b-title {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  right: 0;
+  text-align: left;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000377}}
+.cruise-b-title-hover {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  right: 0;
+  text-align: left;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000388}}
+.cruise-b-memo-hover {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  right: 0;
+  text-align: left;
+  font-family: "Roboto-Regular", "Arial";
+  font-size: 13px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\0000398}}
+.cruise-b-memo-hover strong {
+  position: relative;
+  display: block;
+  padding-bottom: 3px;
+  opacity: 0.6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruises\.sass}line{font-family:\00003104}}
+.cruise-box-hover {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  background: #b10a32;
+  color: white;
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000310}}
+#street-view {
+  position: relative;
+  background: #333333;
+  width: 100%;
+  height: 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000316}}
+#street-pano-canvas {
+  position: absolute !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000319}}
+.streetview-full {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000325}}
+.streetview-toggled {
+  left: 0;
+  bottom: 0;
+  width: 176px;
+  height: 176px;
+  z-index: 3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000332}}
+.street-map-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000338}}
+.small-map {
+  width: 176px;
+  height: 176px;
+  border-top: 8px solid white;
+  border-right: 8px solid white;
+  z-index: 4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000345}}
+.big-map {
+  width: 100%;
+  height: auto;
+  top: 0;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000351}}
+.street-view-toggled {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  z-index: 4;
+  width: 176px;
+  height: 176px;
+  border-top: 8px solid white;
+  border-right: 8px solid white;
+  display: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000365}}
+#street-map-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000372}}
+.expand-street {
+  position: absolute;
+  width: 40px;
+  height: 38px;
+  right: -8px;
+  top: -8px;
+  background: url("/images/ui/expand-arrows-white.jpg") center center no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000379}}
+.expand-street:hover {
+  background: url("/images/ui/expand-arrows-red.jpg") center center no-repeat;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000383}}
+.expand-map {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: -8px;
+  top: -8px;
+  background: url("/images/ui/expand-arrows-white.jpg") right top no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000390}}
+.expand-map:hover {
+  background: url("/images/ui/expand-arrows-red.jpg") right top no-repeat;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000394}}
+.street-view-toggled:hover .expand-street {
+  background: url("/images/ui/expand-arrows-red.jpg") center center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\0000397}}
+#street-hyperlapse-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003106}}
+#hyperlapseDebug {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 7;
+  opacity: 0.9;
+  background: white;
+  bottom: 0;
+  padding-top: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003118}}
+.panoImage {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003127}}
+#street-debug {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background: whitesmoke;
+  font-size: 10px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003138}}
+#street-buttons {
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  width: 400px;
+  height: 50px;
+  margin-left: -200px;
+  line-height: 50px;
+  z-index: 4;
+  display: none;
+  overflow: visible;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003153}}
+.street-next-checkpoint-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 49%;
+  text-align: center;
+  padding-right: 21px;
+  background: url("/images/ui/content-right-btn.png") right center no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003166}}
+.street-next-checkpoint-button.btn-disabled {
+  padding-right: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003169}}
+.street-prev-checkpoint-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 49%;
+  background: url("/images/ui/content-left-btn.png") left center no-repeat;
+  text-align: center;
+  padding-left: 21px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003182}}
+.street-prev-checkpoint-button.btn-disabled {
+  padding-left: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003185}}
+.btn-active {
+  background-color: #b10a32;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003189}}
+.btn-active:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003193}}
+.btn-disabled {
+  background-color: #999999;
+  color: #dddddd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003197}}
+.street-another-tour-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 49%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003210}}
+#street-end-tour-button, #street-back-to-tour-button {
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  width: 200px;
+  height: 50px;
+  margin-left: -100px;
+  line-height: 50px;
+  background: #b10a32;
+  color: white;
+  z-index: 5;
+  text-align: center;
+  display: none;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003226}}
+#street-end-tour-button:hover, #street-back-to-tour-button:hover {
+  color: #333333;
+  background: white;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003231}}
+.marker-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 15px;
+  background-color: #b10a32;
+  color: white;
+  white-space: nowrap;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003243}}
+.marker-title:before {
+  content: "";
+  width: 11px;
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  margin-top: -12px;
+  background: url("/images/ui/timeline-point-arrow.png") left center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003253}}
+.button-title {
+  position: absolute;
+  bottom: 67px;
+  left: 50%;
+  padding: 15px;
+  background-color: #b10a32;
+  color: white;
+  white-space: nowrap;
+  line-height: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003265}}
+.button-title:before {
+  content: "";
+  width: 23px;
+  height: 11px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  background: url("/images/ui/button-title-arrow.png") left center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003275}}
+#checkpointOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003286}}
+#checkpointOverlay div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 130px;
+  text-align: center;
+  margin-top: -75px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003295}}
+#checkpointOverlay div h1 {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Roboto-Thin", "Arial";
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003303}}
+#checkpointOverlay div h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Roboto-Light", "Arial";
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003311}}
+#street-instructions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9;
+  bottom: 0;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003321}}
+.street-instr-center {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0px;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003328}}
+#street-instructions-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003339}}
+#street-instructions h1 {
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-family: "Roboto-Thin", "Arial";
+  font-size: 60px;
+  top: 100px;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003353}}
+#street-instructions span {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Roboto-Light", "Arial";
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003364}}
+#arrows-control {
+  bottom: 120px;
+  width: 230px;
+  left: 50%;
+  margin-left: -115px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003370}}
+#NOT-USED-arrows-control:before, #NOT-USED-map-control:before {
+  content: "";
+  width: 23px;
+  height: 11px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  background: url("/images/ui/white-small-arrow-down.png") left center no-repeat;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003381}}
+#map-control {
+  bottom: 202px;
+  width: 120px;
+  left: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003386}}
+#info-control {
+  top: 100px;
+  width: 152px;
+  right: 110px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003391}}
+#NOT-USED-info-control:before {
+  content: "";
+  width: 11px;
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: -11px;
+  background: url("/images/ui/white-small-arrow-right.png") left center no-repeat;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003402}}
+#controls-control {
+  top: 67px;
+  width: 152px;
+  left: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003407}}
+#NOT-USED-controls-control:before {
+  content: "";
+  width: 23px;
+  height: 11px;
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  top: -11px;
+  background: url("/images/ui/white-small-arrow-up.png") center top no-repeat;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003418}}
+#preload-continue-button {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  margin-bottom: -200px;
+  margin-left: -91px;
+  width: 182px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003433}}
+.instruction-preload-bar {
+  width: 0;
+  height: 1px;
+  position: absolute;
+  margin-bottom: -140px;
+  bottom: 50%;
+  border-top: 1px solid #b10a32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003441}}
+.street-instr-icon {
+  position: absolute;
+  width: 400px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003449}}
+.preload-buttons {
+  position: absolute;
+  opacity: 0;
+  top: -60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003453}}
+.instruction-icon {
+  position: absolute;
+  width: 306px;
+  margin-left: 47px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003457}}
+#instruction-close {
+  width: 50px;
+  height: 49px;
+  background-image: url("../images/ui/content-close-btn.png");
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003466}}
+#instruction-arrow-left {
+  background: url("/images/ui/instruction-arrow-left.png") center top no-repeat;
+  width: 68px;
+  height: 80px;
+  position: absolute;
+  display: none;
+  top: 160px;
+  left: -80px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003476}}
+#instruction-arrow-left:hover {
+  opacity: 0.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003478}}
+#instruction-arrow-right {
+  background: url("/images/ui/instruction-arrow-right.png") center top no-repeat;
+  width: 68px;
+  height: 80px;
+  position: absolute;
+  display: none;
+  top: 160px;
+  left: 400px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003488}}
+#instruction-arrow-right:hover {
+  opacity: 0.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003492}}
+.instruction-loop-title {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Roboto-Thin", "Arial";
+  font-size: 60px;
+  padding-bottom: 20px;
+  top: 50%;
+  margin-top: -200px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003502}}
+.instruction-number {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  top: 180px;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003511}}
+.instruction-title {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  top: 220px;
+  font-family: Roboto-Light;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003520}}
+.instruction-text {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  top: 40px;
+  font-family: Roboto-Light;
+  font-size: 20px;
+  line-height: 28px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003529}}
+.instruction-preload-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 220px;
+  font-family: Roboto-Light;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003538}}
+.dot-container {
+  position: absolute;
+  left: 50%;
+  margin-left: -41px;
+  width: 82px;
+  bottom: 0px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003545}}
+.instruction-dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/images/ui/tips-dot-blank.png") center top no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003550}}
+.btn-disabled {
+  background: #333333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003553}}
+.hover-button {
+  position: relative;
+  background: #b10a32 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003556}}
+.hover-button:hover {
+  background: black !important;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003560}}
+#street-close-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003566}}
+.street-control {
+  position: absolute;
+  top: 0;
+  width: 51px;
+  height: 49px;
+  background-color: #b10a32;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003575}}
+.street-control:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003579}}
+#street-control-audio-preloader {
+  position: absolute;
+  top: 0;
+  width: 51px;
+  height: 49px;
+  background-color: #b10a32;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003588}}
+#street-control-audio-preloader img {
+  margin-top: 16px;
+  margin-left: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003592}}
+#street-control-info {
+  left: 169px;
+  background-image: url("/images/ui/street-control-help.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003596}}
+#street-control-audio {
+  left: 103px;
+  background-image: url("/images/ui/street-control-mic.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003600}}
+#street-control-audio-pause {
+  left: 103px;
+  background-image: url("/images/ui/street-control-pause.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003604}}
+#street-control-audio-preloader {
+  left: 103px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003607}}
+#street-control-hyperlapse {
+  left: 155px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003610}}
+.hyper-on {
+  background-image: url("/images/ui/street-control-hyper-on.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003613}}
+.hyper-off {
+  background-image: url("/images/ui/street-control-hyper-off.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003616}}
+.mapStreetLabel {
+  position: relative;
+  font-family: "Brandon-Bold", "Arial";
+  color: white;
+  min-width: 1px;
+  min-height: 1px;
+  text-transform: uppercase;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003627}}
+.mapStreetLabel span {
+  position: absolute;
+  display: block;
+  bottom: 30px;
+  left: -80px;
+  background: black;
+  padding: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003637}}
+.instruction-state {
+  position: relative;
+  width: 104px;
+  margin: 40px auto 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003642}}
+.instruction-state:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003649}}
+.i-state {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003661}}
+.i-s-active {
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003664}}
+.i-s-inactive {
+  background: #525252;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003668}}
+.street-cntr span {
+  position: absolute;
+  top: 49px;
+  height: 49px;
+  line-height: 49px;
+  padding: 0px 15px;
+  background-color: #b10a32;
+  color: white;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003681}}
+.street-cntr span:before {
+  content: "";
+  width: 23px;
+  height: 11px;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  margin-top: -12px;
+  background: url("../images/ui/btn-arrow-up.png") left center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003691}}
+.back-tours-button {
+  width: 168px;
+  height: 49px;
+  background: url("/images/ui/content-left-btn.png") -5px center no-repeat;
+  text-align: center;
+  padding-left: 20px;
+  background-color: #b10a32;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+  line-height: 50px;
+  color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/street_tour\.sass}line{font-family:\00003708}}
+.back-tours-button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000312}}
+#cruise-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 0;
+  margin-top: 58px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000320}}
+#cruise-home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000329}}
+#cruise-intro-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000336}}
+#back-to-cruises {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000341}}
+#cruise-intro-info {
+  position: absolute;
+  width: 328px;
+  padding: 30px 30px 40px 30px;
+  top: 0px;
+  margin-right: -388px;
+  right: 0;
+  background: #b10a32;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000351}}
+#cruise-intro-info h1 {
+  font-family: "Roboto-Thin", "Arial";
+  font-weight: normal;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000357}}
+#cruise-intro-info strong {
+  font-family: "Roboto-Bold", "Arial";
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+  padding-bottom: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000365}}
+#cruise-intro-memo {
+  font-family: "Roboto-Regular", "Arial";
+  padding-top: 17px;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000373}}
+#cruise-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 426px;
+  height: 100%;
+  background: #b10a32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000381}}
+.cruise-panel-navigation {
+  position: absolute;
+  bottom: 50px;
+  width: 600px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000388}}
+.cruise-panel-zoom {
+  position: absolute;
+  bottom: 0px;
+  width: 100px;
+  height: 49px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\0000397}}
+.cruise-panel-btn {
+  width: 51px;
+  height: 49px;
+  background-color: #b10a32;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003101}}
+.cruise-panel-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003106}}
+.cpb-active {
+  background-color: black !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003110}}
+.cruise-close-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: url("/images/ui/content-left-btn.png") left center no-repeat;
+  background-color: #b10a32;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+  white-space: nowrap;
+  padding-left: 46px;
+  padding-right: 28px;
+  padding-top: 18px;
+  height: 49px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003132}}
+.cruise-close-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003135}}
+#cruise-panel-btn-close {
+  top: 0;
+  background-image: url("../images/ui/content-close-btn.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003139}}
+#cruise-panel-btn-zoomin {
+  background-image: url("../images/ui/cruise-map-icon-zoomin.png");
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003146}}
+#cruise-panel-btn-zoomout {
+  background-image: url("../images/ui/cruise-map-icon-zoomout.png");
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  margin-left: 1px;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003154}}
+#cruise-panel-btn-prev {
+  top: 50px;
+  background-image: url("../images/ui/content-left-btn.png");
+  width: 140px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  padding-top: 17px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Brandon-Bold";
+  height: 31px;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003170}}
+#cruise-panel-btn-next {
+  background-image: url("../images/ui/content-right-btn.png");
+  background-position: 130px;
+  top: 50px;
+  width: 140px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-top: 17px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Brandon-Bold";
+  height: 31px;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003187}}
+#cruise-panel-btn-info {
+  top: 150px;
+  background-image: url("../images/ui/content-info-btn.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003191}}
+#cruise-panel-btn-walk {
+  top: 200px;
+  background-image: url("../images/ui/content-walk-btn.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003195}}
+.cruise-panel-btn span {
+  position: absolute;
+  top: 0;
+  right: 51px;
+  height: 49px;
+  line-height: 49px;
+  padding: 0px 15px;
+  background-color: #b10a32;
+  color: white;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003209}}
+#c-info-panel, .relative {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003212}}
+#c-info-panel .relative img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003217}}
+#cruise-see-tours {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  width: 172px;
+  height: 50px;
+  margin-left: -86px;
+  line-height: 50px;
+  background: #b10a32;
+  color: white;
+  text-align: center;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003231}}
+#cruise-see-tours:hover {
+  background: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003235}}
+#cruise-panel-list {
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003242}}
+.cruise-tour-box {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003250}}
+.cruise-tour-box-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003258}}
+.cruise-tour-box-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 16px #b10a32;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003268}}
+.cruise-tour-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003273}}
+.cruise-tour-box span {
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  right: 16px;
+  text-align: left;
+  color: white;
+  font-family: "Roboto-Light", "Arial";
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003284}}
+.cruise-tour-box-button {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  width: 172px;
+  height: 50px;
+  line-height: 50px;
+  background: #b10a32;
+  color: white;
+  text-align: center;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003299}}
+.cruise-tour-box-button:hover {
+  background: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003303}}
+.a-cruise-tour-box:hover .cruise-tour-box-border {
+  cursor: pointer;
+  border: solid 16px #b10a32;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003308}}
+.a-cruise-tour-box:hover span {
+  top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003311}}
+.a-cruise-tour-box:hover .cruise-tour-box-button {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003314}}
+.a-cruise-tour-box:hover .cruise-tour-box-ul {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003317}}
+.cruise-tour-box-ul {
+  position: relative;
+  display: block;
+  background: #b10a32;
+  font-family: "Roboto-Regular", "Arial";
+  font-size: 13px;
+  cursor: pointer;
+  color: #de98a9;
+  list-style: disc outside none;
+  line-height: 1.3;
+  padding: 20px 30px 30px 58px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003330}}
+#c-info-text {
+  position: relative;
+  padding: 43px 0 30px 43px;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003335}}
+#c-info-text h1 {
+  font-size: 36px;
+  font-family: "Roboto-Thin", "Arial";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003339}}
+#c-info-text span {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-family: "Roboto-Regular", "Arial";
+  padding: 5px 0 15px 0;
+  opacity: 0.6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003347}}
+#c-info-scroll {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  height: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003353}}
+#c-info-scroll p {
+  font-family: "Roboto-Regular", "Arial";
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003359}}
+.markLabel {
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  white-space: nowrap;
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003367}}
+.mapCustomLabel {
+  position: relative;
+  font-family: "Brandon-Bold", "Arial";
+  color: white;
+  cursor: pointer;
+  background: url("/images/ui/city-marker.png") left center no-repeat;
+  padding-left: 20px;
+  min-width: 15px;
+  min-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003378}}
+.mapCustomLabel:hover {
+  background: url("/images/ui/city-marker-rollover.png") left center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003383}}
+.mapCustomLabel .m-label-1 {
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: -30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003389}}
+.mapCustomLabel .m-label-2, .mapCustomLabel .m-label-3 {
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003395}}
+.mapCustomLabel .m-label-4 {
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: 38px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003401}}
+.mapCustomLabel .m-label-5 {
+  position: absolute;
+  display: block;
+  bottom: 18px;
+  left: -45px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003407}}
+.mapCustomLabel .m-label-10 {
+  position: absolute;
+  display: block;
+  top: 18px;
+  left: -11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003413}}
+.mapCustomLabel .m-label-11 {
+  position: absolute;
+  display: block;
+  bottom: 17px;
+  left: -5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003419}}
+.mapCustomLabel .m-label-12 {
+  position: absolute;
+  display: block;
+  top: -15px;
+  left: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003430}}
+.scroll-style-2 .mCustomScrollBox > .mCSB_scrollTools {
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003433}}
+.scroll-style-2 .mCSB_container {
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003436}}
+.scroll-style-2 .mCSB_container.mCS_no_scrollbar {
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/cruise_home\.sass}line{font-family:\00003439}}
+#preload-map {
+  z-index: 0;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\000033}}
+.tour-timeline-checkpoints {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\000038}}
+.tour-timeline-point {
+  height: 23px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\0000312}}
+.tour-timeline-point-icon-past {
+  position: absolute;
+  background-image: url("../images/ui/timeline-point-past.png");
+  width: 51px;
+  height: 23px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\0000319}}
+.tour-timeline-point-icon-on {
+  position: absolute;
+  background-image: url("../images/ui/timeline-point-on.png");
+  width: 51px;
+  height: 23px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\0000326}}
+.tour-timeline-point-icon-off {
+  position: absolute;
+  background-image: url("../images/ui/timeline-point-off.png");
+  width: 51px;
+  height: 23px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\0000332}}
+.tour-timeline-point-tooltip {
+  position: absolute;
+  background-image: url("../images/ui/timeline-point-arrow.png");
+  width: 11px;
+  height: 23px;
+  left: 40px;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\0000340}}
+.tour-timeline-point-title {
+  position: absolute;
+  background-color: #b10a32;
+  left: 51px;
+  height: 50px;
+  margin-top: -13px;
+  color: white;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/timeline\.sass}line{font-family:\0000348}}
+.tour-timeline-point-title span {
+  white-space: nowrap;
+  margin-left: 10px;
+  text-transform: uppercase;
+  top: 16px;
+  margin-right: 10px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\000039}}
+.checkpoint-info {
+  width: 480px;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  left: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000316}}
+.checkpoint-info-container {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  right: 0;
+  background-color: #b10a32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000324}}
+.checkpoint-info-top {
+  height: 275px;
+  width: 430px;
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000331}}
+.checkpoint-info-bottom {
+  padding-left: 43px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 275px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000342}}
+.checkpoint-info-bottom-title {
+  font-size: 24px;
+  margin-top: 35px;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000349}}
+.checkpoint-info-bottom-description {
+  color: white;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  overflow: auto;
+  /*pointer-events: none */
+  cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000358}}
+.checkpoint-info-bottom-title span {
+  font-size: 24px;
+  font-family: "Roboto-Thin", "Arial";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000362}}
+.checkpoint-info-bottom-description span {
+  font-family: "Roboto-Regular", "Arial";
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000368}}
+.checkpoint-info-bottom-description a:link, .checkpoint-info-bottom-description a:hover, .checkpoint-info-bottom-description a:visited {
+  color: white;
+  text-decoration: none;
+  /*pointer-events: none */
+  cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000375}}
+#checkpoint-info-print {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 50px;
+  height: 49px;
+  background: url("../images/ui/print-icon.jpg") left top no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000383}}
+#checkpoint-info-mail {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 50px;
+  height: 49px;
+  background: url("../images/ui/mail-icon.jpg") left top no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000391}}
+.close-button {
+  width: 50px;
+  height: 49px;
+  background-image: url("../images/ui/content-close-btn.png");
+  background-color: #b10a32;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\0000397}}
+.close-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003100}}
+.collapse-button {
+  width: 50px;
+  height: 49px;
+  background-image: url("../images/ui/content-arrow-left.png");
+  background-color: #b10a32;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003106}}
+.collapse-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003109}}
+.panelopen {
+  background-image: url("../images/ui/content-arrow-right.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003113}}
+.arrow-left-button {
+  width: 50px;
+  height: 49px;
+  background-color: #b10a32;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003119}}
+.arrow-left-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003122}}
+.arrow-right-button {
+  width: 50px;
+  height: 49px;
+  background-color: #b10a32;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003127}}
+.arrow-right-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003130}}
+.arrow-navigation {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 0 60px;
+  height: 49px;
+  line-height: 49px;
+  background-color: #b10a32;
+  color: #d9a4aa;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003141}}
+.arrow-navigation span {
+  font-family: "Roboto-Regular", "Arial";
+  font-size: 13px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003145}}
+#checkpoint-info-arrow-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003150}}
+#checkpoint-info-arrow-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003156}}
+.checkpoint-info-top-content {
+  overflow: hidden;
+  width: 430px;
+  height: 275px;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003162}}
+.checkpoint-info-video {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003169}}
+.content-audio-container {
+  margin-top: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003172}}
+.checkpoint-info-audio {
+  height: 115px;
+  margin-left: 0px;
+  color: white;
+  background-color: #9f092e;
+  margin-bottom: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003179}}
+.checkpoint-audio-title {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003186}}
+.checkpoint-audio-description {
+  font-family: Roboto-Light;
+  font-size: 14px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003192}}
+.checkpoint-audio-bar {
+  width: 0;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003198}}
+.checkpoint-audio-bar-bg {
+  width: 225px;
+  height: 5px;
+  background-color: #c74f6b;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003207}}
+.checkpoint-audio-icon {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/ui/media-icon-audio.png");
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003216}}
+.checkpoint-audio-icon:hover {
+  background-image: url("../images/ui/media-icon-audio-rollover.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003219}}
+.checkpoint-audio-pause-icon {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/ui/media-icon-pause.png");
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 10px;
+  position: absolute;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003229}}
+.checkpoint-audio-preloader {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/ajax-loader-small-red.gif");
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 20px;
+  position: absolute;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003239}}
+.checkpoint-audio-pause-icon:hover {
+  background-image: url("../images/ui/media-icon-pause-rollover.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003242}}
+.checkpoint-audio-duration {
+  margin-left: 305px;
+  margin-top: 20px;
+  position: absolute;
+  font-size: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003248}}
+.checkpoint-button-container {
+  width: 51px;
+  margin-left: -50px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003254}}
+.checkpoint-content-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003261}}
+.content-image, .content-video, .content-audio, .content-wikipedia {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003264}}
+.content-overview, .content-wikipedia {
+  width: 430px;
+  overflow: hidden;
+  background: #b10a32;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003271}}
+.content-wikipedia p {
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003274}}
+.content-thumbnail-background, .content-thumbnailvideo-background {
+  height: 111px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003282}}
+.content-thumbnail-left-stripe, .content-thumbnailvideo-left-stripe {
+  height: 111px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003291}}
+.content-thumbnail-right-stripe, .content-thumbnailvideo-right-stripe {
+  height: 111px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003300}}
+.content-thumbnail-left-arrow {
+  width: 51px;
+  height: 49px;
+  margin-top: 30px;
+  background-image: url("../images/ui/content-arrow-left.png");
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003308}}
+.content-thumbnail-right-arrow {
+  width: 51px;
+  height: 49px;
+  margin-top: 30px;
+  background-image: url("../images/ui/content-arrow-right.png");
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003315}}
+.content-thumbnail-container {
+  height: 97px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003322}}
+.content-thumbnailvideo-container {
+  height: 97px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003329}}
+.content-thumb {
+  width: 170px;
+  height: 97px;
+  overflow: hidden;
+  display: inline-block;
+  border: black 3px solid;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003338}}
+.from-viking {
+  position: absolute;
+  bottom: 5px;
+  margin-left: 133px;
+  width: 30px;
+  height: 17px;
+  background-image: url("../images/ui/thumbnail-viking-icon.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003346}}
+.content-thumb img {
+  width: 180px;
+  z-index: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003351}}
+.content-image-button {
+  background-color: #b10a32;
+  width: 51px;
+  height: 49px;
+  float: left;
+  margin-top: 1px;
+  cursor: pointer;
+  background-image: url("../images/ui/content-image-button.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003359}}
+.content-image-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003362}}
+#content-image-close, #content-video-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003368}}
+#content-image-left-arrow, #content-video-left-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 0px;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003375}}
+#content-image-right-arrow, #content-video-right-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  right: 0px;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003381}}
+.content-image-container, .content-video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003388}}
+.content-image-container img {
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003391}}
+#checkpoint-info-close span {
+  right: 480px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003394}}
+.content-info-btn span {
+  position: absolute;
+  right: 49px;
+  height: 49px;
+  line-height: 49px;
+  padding: 0px 15px;
+  background-color: #b10a32;
+  color: white;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003407}}
+.content-info-btn span:before {
+  content: "";
+  width: 11px;
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  margin-top: -12px;
+  background: url("../images/ui/btn-arrow-right.png") left center no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003417}}
+.content-video-button {
+  background-color: #b10a32;
+  width: 51px;
+  height: 49px;
+  float: left;
+  margin-top: 1px;
+  cursor: pointer;
+  background-image: url("../images/ui/content-video-button.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003425}}
+.content-video-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003428}}
+.content-audio-button {
+  background-color: #b10a32;
+  width: 51px;
+  height: 49px;
+  float: left;
+  margin-top: 1px;
+  cursor: pointer;
+  background-image: url("../images/ui/content-audio-button.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003437}}
+.content-audio-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003440}}
+.content-wikipedia-button {
+  background-color: #b10a32;
+  width: 51px;
+  height: 49px;
+  float: left;
+  margin-top: 1px;
+  cursor: pointer;
+  background-image: url("../images/ui/content-wikipedia-button.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003448}}
+.content-wikipedia-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003451}}
+.content-infos-button {
+  background-color: #b10a32;
+  width: 51px;
+  height: 49px;
+  float: left;
+  cursor: pointer;
+  background-image: url("../images/ui/content-info-btn.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003458}}
+.content-infos-button:hover {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003461}}
+.content-wikipedia-title, .content-audio-title {
+  color: white;
+  font-family: Roboto-Light;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003469}}
+.content-overview-title {
+  font-family: Roboto-Light;
+  font-size: 24px;
+  padding: 30px 40px 0 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003474}}
+.gray-title {
+  background: #b10a32;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003478}}
+.red-title {
+  background: #b10a32;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003482}}
+#content-title {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003485}}
+.content-overview-description, .content-wikipedia-container {
+  font-family: Roboto-Light;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  line-height: 24px;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003495}}
+.content-overview-image {
+  position: relative;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003499}}
+.content-overview-image img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* NEW VIKING INSIGHT + WIKIPEDIA BUTTON */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003508}}
+.insightTitle {
+  font-size: 18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003511}}
+.insightText {
+  position: relative;
+  margin-top: 20px;
+  float: left;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003518}}
+.wikibt {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003525}}
+.wikibt .wikilogo {
+  width: 51px;
+  height: 49px;
+  float: left;
+  background-image: url("../images/ui/content-wikipedia-button.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003531}}
+.wikibt .wikitextbt {
+  padding-top: 13px;
+  margin-left: -5px;
+  width: 370px;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003537}}
+.wikiarticle {
+  position: relative;
+  margin-top: 20px;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003542}}
+.wikipedialink {
+  margin-top: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/point_info\.sass}line{font-family:\00003545}}
+.wikipedialink a {
+  color: white;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\000038}}
+.end-of-tour-screen {
+  position: relative;
+  background: #333333;
+  width: 100%;
+  height: 100%;
+  background: url("/images/ui/bg/end-tour-bg.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 18;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000320}}
+.end-of-tour-screen:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000331}}
+.end-of-tour-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 275px;
+  margin-left: -138px;
+  margin-top: -80px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000339}}
+.end-of-tour-buttons h1 {
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000345}}
+.end-of-tour-buttons:after {
+  content: "";
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000351}}
+.end-tour-buttons {
+  width: 275px;
+  background: #b10a32;
+  color: white;
+  float: left;
+  padding: 15px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000368}}
+.end-tour-buttons:hover {
+  background: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000372}}
+.end-tour-buttons a {
+  color: white;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000376}}
+.end-tour-buttons:last {
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000379}}
+.end-tours-back {
+  position: absolute;
+  height: 49px;
+  background: url("/images/ui/content-left-btn.png") -5px center no-repeat;
+  text-align: center;
+  padding-left: 20px;
+  background-color: #b10a32;
+  font-family: "Brandon-Bold", "Arial";
+  font-size: 14px;
+  line-height: 50px;
+  color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\0000396}}
+.end-tours-back:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/endtourscreen\.sass}line{font-family:\00003100}}
+.end-tours-back span {
+  min-width: 100px;
+  height: 49px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\000039}}
+#search-box {
+  position: relative;
+  width: 25%;
+  text-align: center;
+  color: white;
+  background: #b10a32;
+  float: left;
+  padding: 0 0 0 0;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000319}}
+#search-box:hover {
+  background: #b10a32;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000322}}
+.search-box-title {
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  font-size: 36px;
+  font-family: "Roboto-Light", "Arial";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000330}}
+#search-box input {
+  position: relative;
+  display: block;
+  width: 85%;
+  height: 40px;
+  background: url("../images/ui/search-icon-white.png") right no-repeat;
+  background-position-x: 98%;
+  border: 1px solid #df4e6f;
+  font-family: "Brandon-Bold", Arial;
+  font-size: 14px;
+  color: #df4e6f;
+  margin-left: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000348}}
+#search-box input[type=text]:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 0px #51cbee;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000351}}
+#search-box input:active {
+  border: 1px solid white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000354}}
+#header-search-box {
+  position: absolute;
+  width: 270px;
+  height: 30px;
+  top: 14px;
+  right: 150px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000361}}
+#header-search-box input {
+  position: relative;
+  display: block;
+  width: 270px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url("../images/ui/search-icon.png");
+  background-position-x: 98%;
+  border: 1px solid #e5e5e5;
+  font-family: "Brandon-Bold", Arial;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #b2b2b2;
+  margin-left: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000380}}
+.home-buttons-box {
+  position: relative;
+  width: 72%;
+  margin: 16px auto 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000385}}
+.home-buttons-box:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\0000392}}
+.home-buttons {
+  width: 47%;
+  float: left;
+  padding: 15px 5px;
+  margin-right: 3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #b10a32;
+  color: white;
+  text-align: center;
+  font-family: "Brandon-Bold", "Arial";
+  text-transform: uppercase;
+  font-size: 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\00003106}}
+.home-buttons:hover {
+  background: black;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/views\/searchbox\.sass}line{font-family:\00003110}}
+.home-buttons:last-child {
+  margin-right: 0;
+  margin-left: 3%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/main\.sass}line{font-family:\0000314}}
+body {
+  background-color: #cccccc;
+  overflow: hidden;
+  font-family: Verdana;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/main\.sass}line{font-family:\0000320}}
+.button-bg {
+  -webkit-transition: background-color 500ms linear;
+  -moz-transition: background-color 500ms linear;
+  -o-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/anthony\/2013\/viking\/03_dev\/trunk\/project\/develop\/desktop\/styles\/main\.sass}line{font-family:\0000327}}
+.button-bg:hover {
+  -webkit-transition: background-color 500ms linear;
+  -moz-transition: background-color 500ms linear;
+  -o-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}

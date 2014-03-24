@@ -314,7 +314,7 @@
 
 
 
-.agendascrollwrapper{
+#agendascrollwrapper{
   z-index:1;
   overflow: hidden;
   position: absolute;
@@ -574,5 +574,6 @@
   margin-top: -35px;
   background: url(../img/ui/icon-emergency.png) no-repeat;
 }
+
 
 

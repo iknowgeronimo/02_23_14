@@ -1,0 +1,489 @@
+<html>
+  <head>
+    <title>River Cruise Demo App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+  
+
+    <script id="preloader-tpl" type="text/x-template">
+      <div class='preloader-logo'><img src='img/logo-big.png'/></div>
+      <div class='preloader-gif'></div>
+      <div class='preloader-title'><span>Welcome to Viking</span></div>
+    </script>
+
+    <script id="background-tpl" type="text/x-template">
+      <div class='general-bg'><img class='background-image' src='img/background/background-preloader.jpg'/></div>
+    </script>
+
+
+    <script id="home-tpl" type="text/x-template">
+
+      <div class='agenda-notification'>
+        <div class='agenda-notification-container'>
+          <div class='agenda-notification-icon'></div>
+          <div class='agenda-notification-title'></div>
+          <div class='agenda-notification-description'></div>
+          <div class='agenda-notification-footer'>
+            <div class='agenda-notification-button-close'><span>Close</span></div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class='header'>
+        <div class="logo"></div>
+        <div class="geolocation"></div>
+        <div class="currentweather">current forecast ...</div>
+        <div class="currenttime"></div>
+      </div>
+
+      <div class='agenda-widget'>
+        <div class="icon"></div>
+        <div class="event">loading agenda ...</div>
+        <div class="arrow"></div>
+        
+      </div>
+
+      <div class='agenda-slide'>
+        <div class = "tabs">
+          <div class = "tab daily"><p>Daily</p></div>
+          <div class = "tab trip"><p>Trip</p></div>
+        </div>
+
+        <div id="agendascrollwrapper">
+          <div class = "agendas">
+            <div class = "dailyagenda"></div>
+            <div class = "tripagenda"></div>
+          </div>  
+        </div>
+
+      </div>
+
+      <div id="scrollwrapper">
+
+      <div class='menu'>
+
+        <div class="box" id="walks">
+          
+          <div class = "menuIcon icon-walks"></div>
+          <div class="innerContent">
+            Walks
+          </div>
+        </div>
+
+        <div class="box" id="map">
+          <div class = "menuIcon icon-map"></div>
+          <div class="innerContent">
+            Map
+          </div>
+        </div>
+
+        <div class="box" id="directions">
+          <div class = "menuIcon icon-directions"></div>
+          <div class="innerContent">
+            Directions
+          </div>
+        </div>
+
+        <div class="box" id="weather">
+          <div class = "menuIcon icon-weather"></div>
+          <div class="innerContent">
+            Weather
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-currency"></div>
+          <div class="innerContent">
+            Currency
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-translate"></div>
+          <div class="innerContent">
+            Translate
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-taxi"></div>
+          <div class="innerContent">
+            Taxi
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-postcard"></div>
+          <div class="innerContent">
+            Postcard
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-emergency"></div>
+          <div class="innerContent">
+            Emergency
+          </div>
+        </div>
+
+      </div>
+
+        
+      </div>
+
+    </script>
+
+    <script id="weather-tpl" type="text/x-template">
+      <div class='header-content'>Weather</div>
+      <div class='bt-back'></div>
+      <div class='weather'>
+        <div class='currentweather'>
+          <div class='city'></div>
+          <div class='date'></div>
+          <div class='time'></div>
+          <div class='dailyweather'>
+            <div class='icon'></div>
+            <div class='temp'></div>
+          </div>
+          <div id="hourly-wrapper">
+            <div class='hourlyweather'></div>
+          </div>
+          
+          <div class='details'></div>
+        </div>
+        
+
+        <div class='toggle-icon'></div>
+        <div class='weeklyforecast'>
+
+        </div>
+        <div class='bg-footer'></div>
+      </div>
+
+    </script>
+
+    <script id="tours-tpl" type="text/x-template">
+      <div class='header-content'>
+        Walking Tours
+      </div>
+      <div class='bt-back'></div>
+
+    </script>
+
+    <script id="points-tpl" type="text/x-template">
+      <div class='header-content'>Points of Interest</div>
+      <div class='map' id='points-map'></div>
+      <div class='points-bullet'></div>
+      <div class='bt-back'></div>
+    </script>
+
+    <script id="point-detail-tpl" type="text/x-template">
+      <div class='header'><h1></h1></div>
+      <div class='point-distance'></div>
+      <div class='point-time'></div>
+    </script>
+
+    <script id="walking-tour-index-tpl" type="text/x-template">
+      <div class='header-content'>Walking Tours</div>
+      <div class='walking-tour-items'></div>
+      <div class='bt-back'></div>
+    </script>
+
+    <script id="walking-tour-index-item" type="text/x-template">
+      <div class='walking-tour-index-item'>
+        <div class='walking-tour-index-cover'><img src=''/></div>
+        <div class='walking-tour-index-title'><h1></h1></div>
+        <div class='walking-tour-index-description'><h1></h1></div>
+        <div class='walking-tour-index-time-distance'>
+          <div class='icon-time-distance'></div>
+          <div class='text-time-distance'></div>
+        </div>
+        <div class='walking-tour-index-checkpoint'>
+          <div class='icon-checkpoint'></div>
+          <div class='text-checkpoint'></div>
+        </div>
+      </div>
+    </script>
+
+    <script id="walking-tour-content" type="text/x-template">
+      <div class='walking-tour-content'>
+        <div class='header-content' id='walking-tour-content-header'></div>
+        <div class='bt-back'></div>
+        <div class='autotour-bt'><span>start <br>simulation</span></div>
+        <div class='map' id='walking-tour-map'></div>
+        <div class='tour-notification'>
+          <div class='tour-notification-container'>
+            <div class='tour-notification-icon'></div>
+            <div class='tour-notification-title'></div>
+            <div class='tour-notification-description'></div>
+            <div class='tour-notification-footer'>
+              <div class='tour-notification-button-close'><span>Cancel</span></div>
+              <div class='tour-notification-button-listen'><span>Listen</span></div>
+            </div>
+          </div>
+        </div>
+        <div class='img-container'></div>
+        <div class='checkpoint-container'>
+          <div class='checkpoint-container-icon'>
+            <div class='checkpoint-container-number'></div>
+          </div>
+          <div class='checkpoint-container-title'></div>
+          <div class='checkpoint-container-text'></div>
+          <div class='checkpoint-container-close'></div>  
+        </div>
+        
+        <div class='checkpoint-popup'></div>
+        <div class='checkpoint-footer'>
+          <div class='checkpoint-wikipedia'><img src='img/ui/tour-footer-button-wikipedia.png'/></div>
+          <div class='checkpoint-audio'><img src='img/ui/tour-footer-button-audio.png'/></div>
+        </div>
+
+        <div class='checkpoint-audio-player'>
+          <div class='audio-play-gif'></div>
+          <div class='audio-play-button'></div>
+          <div class='audio-pause-button'></div>
+          <div class='audio-bar-background'></div>
+          <div class='audio-bar-progress'></div>
+          <div class='audio-bar-progress-dot'></div>
+          <div class='audio-time-current'>0:00</div>
+          <div class='audio-time-total'>0:00</div>
+          <div class='audio-close'></div>
+        </div>
+        
+       
+        <div class='gallery'>
+          <div id="gallery-wrapper">
+            <div id="gallery-scroller">
+              <div class="images"></div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div id="nav">
+            <ul id="indicator">
+              
+            </ul>
+          </div>
+
+          <div class="close-bt"></div>
+
+        </div>
+      </div>
+    </script>
+
+    <script id="walking-tour-custom-checkpoint" type="text/x-template">
+      <div class='checkpoint-balloon'></div>
+      <div class='checkpoint-title'></div>
+    </script>
+
+    <script id="direction-step-item" type="text/x-template">
+      <div class = 'direction-step-item'>
+        <div class='direction-step-arrow'></div>
+        <div class='direction-step-info'>
+          <div class='direction-step-text'></div>
+          <div class='direction-step-distance'></div>
+        </div>
+      </div>
+    </script>
+
+     <script id="direction-container" type="text/x-template">
+      <div class='header-content'>Direction to ship</div>
+      <div class='bt-back'></div>
+      <div class='direction-container'>
+       
+        <div class='direction-content'>
+          <div class='map' id='direction-map'></div>
+          <div class='direction-content-compass'>
+            <div class='direction-content-arrow'></div>
+            <div class='direction-compass-distance'></div>
+            <div class='direction-compass-time'></div>
+          </div>
+        <div class='direction-legend'>
+          <div class='direction-legend-current'>
+            <div class='direction-map-legend-arrow'></div>
+            <div class='direction-map-legend-title'></div>
+          </div>
+          <div class='direction-map-legend-subtitle'></div>
+          <div class='direction-map-debug'></div>
+          <div class='direction-map-steps-container'></div>
+        </div>
+        <div class='direction-footer'>
+          <div class='direction-footer-buttons'>
+            <div class='direction-button' id='direction-button-compass'><img src='img/direction/direction-button-compass.png'/></div>
+            <div class='direction-button' id='direction-button-map'><img src='img/direction/direction-button-directions.png'/></div>
+            <div class='direction-button' id='direction-button-taxi'><img src='img/direction/direction-button-taxi.png'/></div>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+    <script src="phonegap.js"></script>
+    
+       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1waQCfoRmTbhOL9IzpbQtbt4g3JX3FxM&amp;v=3.exp&amp;sensor=true&amp;language=en"></script>
+    
+    <script src="js/lib/jquery-1.10.1.min.js"></script>
+    
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/lib/PushNotification.js"></script>
+    <script src="js/lib/iscroll.js"></script>
+    <script src="js/lib/createjs-2013.09.25.min.js"></script>
+    <script src="js/lib/soundjs-0.5.0.min.js"></script>
+    <script src="js/lib/flashplugin-0.5.0.min.js"></script>
+    <script src="js/lib/richmarker-compiled.js"></script>
+    
+    <script type="text/javascript" src="js/view/BackgroundView.js"></script>
+    <script type="text/javascript" src="js/view/PreloaderView.js"></script>
+    <script type="text/javascript" src="js/view/DirectionView.js"></script>
+    <script type="text/javascript" src="js/view/HomeView.js"></script>
+    <script type="text/javascript" src="js/view/ToursView.js"></script>
+    <script type="text/javascript" src="js/view/PointsView.js"></script>
+    <script type="text/javascript" src="js/view/WalkingTourView.js"></script>
+    <script type="text/javascript" src="js/view/WeatherView.js"></script>
+    <script type="text/javascript" src="js/Router.js"></script>
+    <script type="text/javascript" src="js/Navigation.js"></script>
+    <script type="text/javascript" src="js/util/DataService.js"></script>
+    <script type="text/javascript" src="js/util/WikipediaService.js"></script>
+    <script type="text/javascript" src="js/util/GoogleMapService.js"></script>
+    <script type="text/javascript" src="js/util/GeoLocationService.js"></script>
+    <script type="text/javascript" src="js/util/WeatherService.js"></script>
+    <script type="text/javascript" src="js/util/AgendaService.js"></script>
+    <script type="text/javascript" src="js/util/Clock.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  <section id="bg"></section>
+    <section id="content"></section>
+    <div id="debug" style="position: absolute;
+z-index: 100;pointer-events:none;"></div>
+
+
+
+
+
+      <div class="agenda-notification">
+        <div class="agenda-notification-container">
+          <div class="agenda-notification-icon"></div>
+          <div class="agenda-notification-title"></div>
+          <div class="agenda-notification-description"></div>
+          <div class="agenda-notification-footer">
+            <div class="agenda-notification-button-close"><span>Close</span></div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="header">
+        <div class="logo"></div>
+        <div class="geolocation"></div>
+        <div class="currentweather"><div class="unit">F</div> <div class="temperature">35.4°</div><img src="img/01.png"><div class="city">Budapest, Hungary</div><div class="date">Sunday, Jan 23</div></div>
+        <div class="currenttime"><span class="time">09:23</span><span class="info">PM </span><span class="info">(UTC -0800)</span></div>
+      </div>
+
+      <div class="agenda-widget">
+        <div class="icon"></div>
+        <div class="event">Day is over, see you tomorrow !</div>
+        <div class="arrow arrow-down"></div>
+        
+      </div>
+
+      <div class="agenda-slide" style="display: none;">
+        <div class="tabs">
+          <div class="tab daily" style="border-bottom-color: rgb(191, 0, 44); border-bottom-style: solid; border-bottom-width: 4px;"><p>Daily</p></div>
+          <div class="tab trip"><p>Trip</p></div>
+        </div>
+
+        <div id="agendascrollwrapper" style="overflow: hidden;">
+          <div class="agendas" style="-webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px);">
+            <div class="dailyagenda"><div class="hour"><div class="number"><p>6:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>7:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>8:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>9:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>10:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>11:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>12:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>13:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>14:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>15:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>16:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>17:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>18:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>19:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>20:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>21:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="hour"><div class="number"><p>22:00</p></div><div class="line" style="width: 1850px;"><hr></div></div><div class="container"><div class="agendabox" id="event_1" style="position: absolute; top: 19px; left: 70px; width: 915px; height: 296px; background-color: rgba(255, 255, 255, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Cafe Breakfast</div></div><div class="agendabox" id="event_2" style="position: absolute; top: 169px; left: 985px; width: 915px; height: 236px; background-color: rgba(220, 220, 220, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Shore Excursion: Budapest</div></div><div class="agendabox" id="event_3" style="position: absolute; top: 409px; left: 70px; width: 1830px; height: 56px; background-color: rgba(214, 16, 40, 0.901961);"><div class="description" style="color: rgb(255, 255, 255);">Lunch</div></div><div class="agendabox" id="event_4" style="position: absolute; top: 499px; left: 70px; width: 1830px; height: 146px; background-color: rgba(220, 220, 220, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Guided Walking Tour: Budapest Walk</div></div><div class="agendabox" id="event_5" style="position: absolute; top: 709px; left: 70px; width: 915px; height: 116px; background-color: rgba(255, 255, 255, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Cocktail Hour</div></div><div class="agendabox" id="event_6" style="position: absolute; top: 769px; left: 985px; width: 915px; height: 56px; background-color: rgba(220, 220, 220, 0.701961);"><div class="description" style="color: rgb(0, 0, 0);">Daily Briefly</div></div><div class="agendabox" id="event_7" style="position: absolute; top: 859px; left: 70px; width: 1830px; height: 56px; background-color: rgba(214, 16, 40, 0.901961);"><div class="description" style="color: rgb(255, 255, 255);">Welcome dinner</div></div><div class="agendabox" id="event_8" style="position: absolute; top: 919px; left: 70px; width: 1830px; height: 56px; background-color: rgba(214, 16, 40, 0.901961);"><div class="description" style="color: rgb(255, 255, 255);">Cast off</div></div></div></div>
+            <div class="tripagenda" style="display: none;"><div class="day" id="day_0"><div class="date"><div class="month">08/14</div><div class="dayletters">TUE</div></div><div class="weather-icon"><img src="file:///C|/Users/user/Documents/GitHub/02_23_14/www/River Cruise Demo App_files/01.png"></div><div class="city" style="width: 1780px;"><div class="name">Budapest</div><div class="desc">Discover Budapest historic city center through guided walking tours ...</div></div></div><div class="day" id="day_1"><div class="date"><div class="month">08/15</div><div class="dayletters">WED</div></div><div class="weather-icon"><img src="file:///C|/Users/user/Documents/GitHub/02_23_14/www/River Cruise Demo App_files/02.png"></div><div class="city" style="width: 1780px;"><div class="name">Vienna</div><div class="desc">Discover Vienna historic city center through guided walking tours ...</div></div></div><div class="day" id="day_2"><div class="date"><div class="month">08/16</div><div class="dayletters">THU</div></div><div class="weather-icon"><img src="file:///C|/Users/user/Documents/GitHub/02_23_14/www/River Cruise Demo App_files/02.png"></div><div class="city" style="width: 1780px;"><div class="name">Vienna</div><div class="desc">Discover Vienna historic city center through guided walking tours ...</div></div></div><div class="day" id="day_3"><div class="date"><div class="month">08/17</div><div class="dayletters">FRI</div></div><div class="weather-icon"><img src="file:///C|/Users/user/Documents/GitHub/02_23_14/www/River Cruise Demo App_files/04.png"></div><div class="city" style="width: 1780px;"><div class="name">Bratislava</div><div class="desc">Discover Bratislava ...</div></div></div></div>
+          </div>  
+        </div>
+
+      </div>
+
+      <div id="scrollwrapper" style="overflow: hidden;">
+
+      <div class="menu" style="-webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px);">
+
+       <div class="box" id="walks">
+          
+          <div class = "menuIcon icon-walks"></div>
+          <div class="innerContent">
+    Walks
+          </div>
+        </div>
+
+        <div class="box" id="map">
+          <div class = "menuIcon icon-map"></div>
+          <div class="innerContent">
+            Map
+          </div>
+        </div>
+
+        <div class="box" id="directions">
+          <div class = "menuIcon icon-directions"></div>
+          <div class="innerContent">
+            Directions
+          </div>
+        </div>
+
+        <div class="box" id="weather">
+          <div class = "menuIcon icon-weather"></div>
+          <div class="innerContent">
+            Weather
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-currency"></div>
+          <div class="innerContent">
+            Currency
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-translate"></div>
+          <div class="innerContent">
+            Translate
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-taxi"></div>
+          <div class="innerContent">
+            Taxi
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-postcard"></div>
+          <div class="innerContent">
+            Postcard
+          </div>
+        </div>
+
+        <div class="box">
+          <div class = "menuIcon icon-emergency"></div>
+          <div class="innerContent">
+            Emergency
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+        
+      <div style="position: absolute; z-index: 100; width: 7px; bottom: 2px; top: 2px; right: 1px; pointer-events: none; -webkit-transition: opacity 0ms 300ms; transition: opacity 0ms 300ms; overflow: hidden; opacity: 0;"><div style="position: absolute; z-index: 100; background-color: rgba(0, 0, 0, 0.498039); border: 1px solid rgba(255, 255, 255, 0.901961); -webkit-background-clip: padding-box; box-sizing: border-box; width: 100%; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; pointer-events: none; -webkit-transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transform: translate(0px, 0px) translateZ(0px); height: 221px;"></div></div></div>
+
+    </div></section>
+    
+  
+</body></html>
